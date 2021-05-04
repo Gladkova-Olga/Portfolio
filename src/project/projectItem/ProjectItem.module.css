@@ -1,7 +1,7 @@
 .projectItem {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .picture {
@@ -13,10 +13,12 @@
 .title {
     background-color: #8ba37f;
     margin-top: 2px;
+    margin-left: 5px;
 }
 
 .description {
     background-color: #98a192;
     text-align: center;
     margin-top: 2px;
+    margin-left: 5px;
 }
