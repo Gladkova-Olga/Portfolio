@@ -7,19 +7,14 @@ function Contact() {
     return (
         <div className={style.contactBlock}>
             <div className={`${styleContainer.container} ${style.contactContainer}`}>
-
-
+                <h2 className={style.title}>Contact</h2>
                 <form className={style.form}>
-                    <h2 className={style.title}>Contact</h2>
                     <input type="text" name="name" placeholder="Name"/>
                     <input type="text" name="e-mail" placeholder="E-mail"/>
                     <textarea name="message" placeholder="Your message"></textarea>
-                    <input type="submit" value="Send message"/>
-
                 </form>
-
+                <button>Send message</button>
             </div>
-
         </div>
     );
 }

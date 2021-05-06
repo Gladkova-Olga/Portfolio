@@ -14,9 +14,11 @@
 }
 
 .form {
+    width: 250px;
     background-color: orange;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }

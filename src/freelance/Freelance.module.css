@@ -1,15 +1,15 @@
 .freelanceBlock {
-    height: 50vh;
+    height: 25vh;
     background-color: #f8f4d5;
 }
 
 .freelanceContainer {
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .title {
     background-color: #d0b3aa;
+    text-align: center;
 }
 
 .button {
