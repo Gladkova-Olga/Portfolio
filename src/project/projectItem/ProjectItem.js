@@ -10,7 +10,7 @@ function ProjectItem(props) {
                 {/*<img href="" alt={props.pictureDescription}/>*/}
                 <a className={style.projectButton}>Look</a>
             </div>
-            <span className={style.projectText}>{props.title}</span>
+            <h6 className={style.projectTitle}>{props.title}</h6>
             <span className={style.projectText}>
                 {props.description}
             </span>

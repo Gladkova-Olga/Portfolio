@@ -21,8 +21,16 @@
 }
 
 
+.projectTitle {
+    background-color: #98a192;
+    text-align: center;
+    margin-top: 2px;
+}
+
+
 .projectText {
     background-color: #98a192;
     text-align: center;
     margin-top: 2px;
 }
+

@@ -22,3 +22,7 @@
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
+
+.form input, .form.textarea {
+    width: 100%;
+}

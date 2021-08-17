@@ -2,13 +2,15 @@ import React from 'react';
 import style from './Projects.module.css';
 import styleContainer from "../common/styles/Container.module.css";
 import ProjectItem from "./projectItem/ProjectItem";
+import Title from "../common/components/title/Title";
 
 
 function Projects() {
     return (
         <div className={style.projectsBlock}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-                <h2 className={style.title}>My projects</h2>
+               <Title text = "My Projects"/>
+
                 <div className={style.projects}>
                 <ProjectItem
                     title = {"Social network"}

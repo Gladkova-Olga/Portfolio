@@ -11,9 +11,9 @@ function Contact() {
                 <form className={style.form}>
                     <input type="text" name="name" placeholder="Name"/>
                     <input type="text" name="e-mail" placeholder="E-mail"/>
-                    <textarea name="message" placeholder="Your message"></textarea>
+                    <textarea name="message" placeholder="Your message" ></textarea>
                 </form>
-                <button>Send message</button>
+                <button type = "submit">Send message</button>
             </div>
         </div>
     );
