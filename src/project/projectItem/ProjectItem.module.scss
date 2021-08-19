@@ -1,0 +1,74 @@
+@import "../../common/styles/sass/vareables";
+@import "../../common/styles/sass/mixins";
+
+.projectItem {
+  display: flex;
+  flex-direction: column;
+  /*align-items: flex-start;*/
+  padding: 40px 15px;
+  width: 500px;
+
+  .pictureContainer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.2;
+    }
+
+    .projectButton {
+      background-color: $primaryColor;
+      border-radius: 10px;
+      /*width: 50px;*/
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      @include text($fontFamilyDescription, 13px, 600, 1.3,  #fff);
+      border-color: $primaryColor;
+      padding: 8px 20px;
+      margin: 0 5px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .projectInfo {
+    padding: 20px;
+
+    .projectTitle {
+      text-align: center;
+      margin: 0 0 0px;
+      @include text($fontFamilyTitle, 22px, 600, 1.2, $textColor);
+    }
+
+    .projectDescription {
+      text-align: center;
+      word-spacing: 1px;
+      @include text($fontFamilyDescription, 15px, 400, 1.6,  $descriptionColor);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
