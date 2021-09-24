@@ -1,0 +1,12 @@
+@import "../../styles/sass/mixins";
+@import "../../styles/sass/vareables";
+
+.button {
+  background-color: $backgroundColor;
+  border: 1px solid $primaryColor;
+  height: 40px;
+  width: 130px;
+  //text-transform: uppercase;
+  letter-spacing: 1px;
+  @include text($fontFamilyDescription, 14px, 700, 1, $primaryColor)
+}
