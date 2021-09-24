@@ -1,0 +1,28 @@
+@import "../common/styles/sass/vareables";
+@import "../common/styles/sass/mixins";
+.freelanceBlock {
+  height: 20vh;
+  background-color: $backgroundColor;
+
+  .freelanceContainer {
+    flex-direction: column;
+    .buttonContainer {
+      padding-bottom: 20px;
+      .button {
+        background-color: $backgroundColor;
+        border: 1px solid $primaryColor;
+        height: 40px;
+        width: 130px;
+        //text-transform: uppercase;
+        letter-spacing: 1px;
+        @include text($fontFamilyDescription, 14px, 700, 1, $primaryColor)
+      }
+    }
+
+
+  }
+}
+
+
+
+

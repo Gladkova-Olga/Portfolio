@@ -1,0 +1,26 @@
+@import "../common/styles/sass/mixins.scss";
+@import "../common/styles/sass/vareables.scss";
+
+.skillsBlock {
+  /*min-height: 100vh;*/
+  background: $backgroundColor;
+  position: relative;
+
+  .skillsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1;
+
+    .skills {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 5px;
+      @media screen and (max-width: 642px) {
+        justify-content: center;
+      }
+    }
+  }
+}
+

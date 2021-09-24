@@ -1,0 +1,32 @@
+@import "../../common/styles/sass/mixins.scss";
+@import "../../common/styles/sass/vareables.scss";
+
+.skillItem {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px;
+    .iconContainer {
+        padding: 40px 15px;
+        .icon {
+            height: 60px;
+            width: 60px;
+        }
+    }
+    .skillTitle {
+        @include text($fontFamilyTitle, 22px, 600, 1.2, $textColor);
+        margin: 0 0 0px;
+        text-align: center;
+
+    }
+    .description {
+        text-align: center;
+        word-spacing: 1px;
+        @include text($fontFamilyDescription, 15px, 400, 1.6,  $descriptionColor);
+    }
+}
+
+
+
