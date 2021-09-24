@@ -1,0 +1,45 @@
+@import '../common/styles/sass/vareables';
+@import '../common/styles/sass/mixins';
+
+.mainBlock {
+  height: 100vh;
+  background-color: $backgroundColor;
+
+  .mainContainer {
+    @media screen and (max-width: 1250px) {
+      justify-content: center;
+    }
+    .text {
+      width: 400px;
+      @include text($fontFamilyTitle, 36px, 300, 1.2, $textColor);
+
+      .title {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        @include text($fontFamilyTitle, 40px, 500, 1.2, $textColor);
+
+        .title h4 {
+          margin: 0px;
+        }
+      }
+
+      .description {
+        @include text($fontFamilyTitle, 30px, 200, 1.2, $textColor);
+
+      }
+
+    }
+
+    .photo {
+      width: 400px;
+      background-color: aliceblue;
+    }
+  }
+  }
+
+
+
+
+
+
+
