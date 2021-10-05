@@ -7,19 +7,19 @@
 
   .contactContainer {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
 
     .form {
-      width: 100%;
+      width: 80%;
       //background-color: $backgroundColor;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       flex-wrap: wrap;
       margin-bottom: 20px;
-      margin-top: 5px;
+      margin-top: 20px;
       @media screen and (min-width: 700px) {
-        width: 70%;
+        width: 60%;
       }
     }
 

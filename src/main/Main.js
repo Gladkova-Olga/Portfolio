@@ -5,7 +5,7 @@ import meImg from './../assets/images/me.jpg'
 
 function Main() {
     return (
-        <div className={style.mainBlock}>
+        <div className={style.mainBlock} id = "main">
             <div className={`${styleContainer.container} ${style.mainContainer}`}>
                 <div className={style.text}>
                     <span>Hi there!</span>

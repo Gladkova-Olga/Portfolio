@@ -7,7 +7,7 @@ import Button from "../common/components/button/Button";
 
 function Contact() {
     return (
-        <div className={style.contactBlock}>
+        <div className={style.contactBlock} id = "contacts">
             <div className={`${styleContainer.container} ${style.contactContainer}`}>
                 <Title text = {"Contact"}/>
                 <form className={style.form}>

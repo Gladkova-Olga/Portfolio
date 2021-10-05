@@ -1,0 +1,20 @@
+@import "../common/styles/sass/vareables";
+@import "../common/styles/sass/mixins";
+
+.nav {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    @include text($fontFamilyTitle, 14px, 600, 1.3, $textColor);
+    letter-spacing: .5px;
+    margin: 15px 15px;
+    a:link {
+        color: $textColor;
+    }
+    a:visited {
+        color: $textColor;
+    }
+    & a {
+        text-decoration: none;
+    }
+}

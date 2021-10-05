@@ -3,11 +3,11 @@
 
 .title {
   padding-bottom: 10px;
-  //padding-top: 10px;
   position: relative;
   @include text($fontFamilyTitle, 36px, 600, 1.2, $textColor);
-  .title h4 {
+  & h4 {
     margin: 0px;
+    font-weight: inherit;
   }
 
   &::after  {

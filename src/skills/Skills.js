@@ -15,7 +15,7 @@ import cssIcon from "../assets/images/css.svg"
 function Skills() {
 
     return (
-        <div className={style.skillsBlock}>
+        <div className={style.skillsBlock} id = "skills">
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title text = "Skills"/>
                 <div className={style.skills}>

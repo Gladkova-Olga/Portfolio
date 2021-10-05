@@ -1,7 +1,9 @@
+@import "../common/styles/sass/vareables";
+
 .header {
     height: 80px;
-    background-color: darkseagreen;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color: $backgroundColor;
 }
