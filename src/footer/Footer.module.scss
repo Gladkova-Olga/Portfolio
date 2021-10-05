@@ -1,0 +1,32 @@
+@import "../common/styles/sass/vareables";
+@import "../common/styles/sass/mixins";
+
+
+.footer {
+  background-color: $backgroundColor;
+  padding: 50px 0;
+
+  .footerContainer {
+    flex-direction: column;
+
+    .footerText {
+      padding-top: 30px;
+      @include text($fontFamilyDescription, 13px, 400, 1.6, $descriptionColor)
+    }
+
+    .footerItems {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media screen and (max-width: 800px) {
+        justify-content: left;
+      }
+    }
+  }
+}
+
+
+
+
+

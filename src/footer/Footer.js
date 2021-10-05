@@ -1,20 +1,23 @@
 import React from 'react';
-import style from './Footer.module.css';
-import styleContainer from "../common/styles/Container.module.css";
+import style from './Footer.module.scss';
+import styleContainer from "../common/styles/Container.module.scss";
 import FooterItem from "./FooterItem/FooterItem";
+import {faPhone} from '@fortawesome/free-solid-svg-icons'
+import {faAt} from '@fortawesome/free-solid-svg-icons'
+import {faLocationArrow} from '@fortawesome/free-solid-svg-icons'
+
 
 function Footer() {
     return (
         <div className={style.footer}>
             <div className={`${styleContainer.container} ${style.footerContainer}`}>
-                <h2 className={style.footerText}>Gladkova Olga</h2>
                 <div className={style.footerItems}>
-                    <FooterItem/>
-                    <FooterItem/>
-                    <FooterItem/>
-                    <FooterItem/>
+                    <FooterItem icon = {faAt} title = "E-mail" content = "olga_gladkova@tut.by"/>
+                    <FooterItem icon = {faPhone} title = "Phone" content = "+37061942746"/>
+                    <FooterItem icon = {faLocationArrow} title = "City" content = "Vilnius"/>
+
                 </div>
-                <div className={style.footerText}>&#169; All rights reserved</div>
+                <div className={style.footerText}>&#169; And made with love All rights reserved</div>
             </div>
         </div>
     );

@@ -1,14 +1,14 @@
 @import "../common/styles/sass/vareables";
 @import "../common/styles/sass/mixins";
 .freelanceBlock {
-  height: 20vh;
+  height: 15vh;
   background-color: $backgroundColor;
 
   .freelanceContainer {
     flex-direction: column;
-    .buttonContainer {
-      padding-bottom: 20px;
-    }
+    //.buttonContainer {
+    //  padding-bottom: 20px;
+    //}
 
 
   }

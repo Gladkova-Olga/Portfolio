@@ -1,0 +1,45 @@
+@import "../../common/styles/sass/vareables";
+@import "../../common/styles/sass/mixins";
+
+.footerItem {
+  background-color: $backgroundColor;
+  width: 250px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+
+  .footerItemIcon {
+    color: $primaryColor;
+    font-size: x-large;
+    padding: 5px 15px ;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 1px;
+      height: 80%;
+      background: $descriptionColor;
+      position: absolute;
+      right: 0;
+
+    }
+  }
+
+  .footerItemText {
+    margin-left: 15px;
+
+    .footerItemTitle {
+      @include text($fontFamilyTitle, 14px, 600, 1.2, $textColor)
+
+    }
+
+    .footerItemDescription {
+      @include text($fontFamilyDescription, 15px, 400, 1.2, $descriptionColor);
+      word-spacing: 1px;
+      margin: 0;
+    }
+  }
+
+
+}
