@@ -2,7 +2,6 @@ import React from 'react';
 import style from './SlillItem.module.scss';
 
 
-
 function SkillItem(props) {
     return (
         <div className={style.skillItem}>

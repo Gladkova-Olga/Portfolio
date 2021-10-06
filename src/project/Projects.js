@@ -16,27 +16,22 @@ function Projects() {
     };
 
     return (
-        <div className={style.projectsBlock} id = "projects">
+        <div className={style.projectsBlock} id="projects">
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-               <Title text = "My Projects"/>
+                <Title text="My Projects"/>
                 <div className={style.projects}>
-                <ProjectItem
-                    style = {socialNetwork}
-                    title = {"Social network"}
-                    description = {"It's simple social network"}
-                    pictureDescription = {"Social network"}
-                />
                     <ProjectItem
-                        style = {todoList}
-                        title = {"TodoList"}
-                        description = {"Some description ttttlj slkdfhs;kj dfhsjd fhgsljdfhgsl kjdfhglskdfj hgsd"}
-                        pictureDescription = {"TodoList"}
+                        style={socialNetwork}
+                        title={"Social network"}
+                        description={"It's simple social network"}
+                        projectLink={"https://github.com/Gladkova-Olga/SocialNetwork"}
                     />
-                    {/*<ProjectItem*/}
-                    {/*    title = {"Counter"}*/}
-                    {/*    description = {"One more description"}*/}
-                    {/*    pictureDescription = {"Counter"}*/}
-                    {/*/>*/}
+                    <ProjectItem
+                        style={todoList}
+                        title={"TodoList"}
+                        description={"Some description"}
+                        projectLink={"https://github.com/Gladkova-Olga/MyTodoList"}
+                    />
                 </div>
 
             </div>

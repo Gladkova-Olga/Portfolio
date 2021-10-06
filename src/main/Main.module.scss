@@ -6,37 +6,68 @@
   background-color: $backgroundColor;
 
   .mainContainer {
-    @media screen and (max-width: 1250px) {
-      justify-content: center;
-    }
-    .text {
-      width: 400px;
-      @include text($fontFamilyTitle, 36px, 300, 1.2, $textColor);
+    flex-direction: column;
+    justify-content: space-around;
 
-      .title {
-        padding-bottom: 10px;
-        padding-top: 10px;
-        @include text($fontFamilyTitle, 40px, 600, 1.2, $textColor);
 
-        & h4 {
-          margin: 0px;
-          font-weight: inherit;
+    .mainContent {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media screen and (max-width: 1000px) {
+        justify-content: center;
+      }
+
+      .text {
+        width: 400px;
+        @include text($fontFamilyTitle, 36px, 300, 1.2, $textColor);
+
+        .title {
+          padding-bottom: 10px;
+          padding-top: 10px;
+          @include text($fontFamilyTitle, 40px, 600, 1.2, $textColor);
+
+          & h4 {
+            margin: 0px;
+            font-weight: inherit;
+          }
+        }
+
+        .description {
+          @include text($fontFamilyTitle, 30px, 200, 1.2, $textColor);
         }
       }
 
-      .description {
-        @include text($fontFamilyTitle, 30px, 200, 1.2, $textColor);
+      .photo {
+        width: 400px;
+      }
+    }
 
+    .mainBlockLink {
+      @include text($fontFamilyDescription, 14px, 700, 1, $primaryColor);
+      border: 1px solid $primaryColor;
+      letter-spacing: 1px;
+      height: 40px;
+      width: 130px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+
+      a:link {
+        color: $primaryColor;
       }
 
-    }
+      a:visited {
+        color: $primaryColor;
+      }
 
-    .photo {
-      width: 400px;
-      background-color: aliceblue;
+      & a {
+        text-decoration: none;
+      }
     }
   }
-  }
+}
 
 
 

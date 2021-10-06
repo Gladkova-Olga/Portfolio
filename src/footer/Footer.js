@@ -15,7 +15,6 @@ function Footer() {
                     <FooterItem icon = {faAt} title = "E-mail" content = "olga_gladkova@tut.by"/>
                     <FooterItem icon = {faPhone} title = "Phone" content = "+37061942746"/>
                     <FooterItem icon = {faLocationArrow} title = "City" content = "Vilnius"/>
-
                 </div>
                 <div className={style.footerText}>&#169; And made with love All rights reserved</div>
             </div>

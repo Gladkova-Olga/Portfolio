@@ -6,10 +6,9 @@ function ProjectItem(props) {
     return (
         <div className={style.projectItem}>
             <div className={style.pictureContainer} style={props.style}>
-                {/*<img href="" alt={props.pictureDescription}/>*/}
-                <a className={style.projectButton}>Look</a>
-
+                <a href={props.projectLink} className={style.projectButton}>Look</a>
             </div>
+
             <div className={style.projectInfo}>
                 <h6 className={style.projectTitle}>{props.title}</h6>
                 <p className={style.projectDescription}>{props.description}</p>
