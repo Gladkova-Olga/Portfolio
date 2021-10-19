@@ -7,7 +7,7 @@
 
   .mainContainer {
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
 
     .mainContent {
@@ -19,7 +19,6 @@
       }
 
       .text {
-        width: 400px;
         @include text($fontFamilyTitle, 36px, 300, 1.2, $textColor);
 
         .title {
@@ -38,8 +37,15 @@
         }
       }
 
-      .photo {
-        width: 400px;
+      .photoContainer {
+        width: 50%;
+        @media screen and (max-width: 865px) {
+          width: 90%;
+        }
+
+        .photo {
+          width: 100%;
+        }
       }
     }
 

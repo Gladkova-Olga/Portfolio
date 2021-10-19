@@ -2,8 +2,9 @@
 @import "../common/styles/sass/vareables.scss";
 
 .skillsBlock {
-  background: $backgroundColor;
+  background: $backgroundSecondaryColor;
   position: relative;
+  padding: 30px 0;
 
   .skillsContainer {
     flex-direction: column;

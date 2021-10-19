@@ -13,7 +13,7 @@ function Main() {
                         <h4 className={style.title}>I'm Olga Gladkova</h4>
                         <p className={style.description}>A frontend developer</p>
                     </div>
-                    <div >
+                    <div className={style.photoContainer}>
                         <img className={style.photo} src = {meImg} alt={""}/>
                     </div>
                 </div>
