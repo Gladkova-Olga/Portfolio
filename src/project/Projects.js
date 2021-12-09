@@ -17,7 +17,7 @@ function Projects() {
 
     return (
         <div className={style.projectsBlock} id="projects">
-            <div className={`${styleContainer.container} ${style.projectsContainer}`}>
+            <div className={` ${style.projectsContainer}`}>
                 <Title text="My Projects"/>
                 <div className={style.projects}>
                     <ProjectItem

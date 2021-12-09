@@ -6,14 +6,17 @@
   background-color: $backgroundColor;
 
   .mainContainer {
-    flex-direction: column;
-    justify-content: space-evenly;
-
+    height: 100%;
+    //flex-direction: column;
+    //justify-content: space-evenly;
+    @include container();
+    @include flex(column, space-evenly, center, wrap);
 
     .mainContent {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      //display: flex;
+      //justify-content: space-between;
+      //flex-wrap: wrap;
+      @include flex(row, space-between, center, wrap);
       @media screen and (max-width: 1000px) {
         justify-content: center;
       }
@@ -42,9 +45,25 @@
         @media screen and (max-width: 865px) {
           width: 90%;
         }
+        position: relative;
+        z-index: 1;
+        &:before {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          border: 1px solid $primaryColor;
+          right: -20px;
+          bottom: -20px;
+          z-index: -1;
+        }
 
         .photo {
           width: 100%;
+
+
+
+
         }
       }
     }
@@ -55,9 +74,10 @@
       letter-spacing: 1px;
       height: 40px;
       width: 130px;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
+      @include flex(column, center, center, nowrap);
+      //display: flex;
+      //justify-content: center;
+      //flex-direction: column;
       text-align: center;
 
       a:link {

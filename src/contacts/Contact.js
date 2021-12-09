@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './Contact.module.scss';
-import styleContainer from "../common/styles/Container.module.scss";
 import Title from "../common/components/title/Title";
 import Button from "../common/components/button/Button";
 
@@ -8,7 +7,7 @@ import Button from "../common/components/button/Button";
 function Contact() {
     return (
         <div className={style.contactBlock} id = "contacts">
-            <div className={`${styleContainer.container} ${style.contactContainer}`}>
+            <div className={`${style.contactContainer}`}>
                 <Title text = {"Contact"}/>
                 <form className={style.form}>
                     <input type="text" name="name" placeholder="Name"/>

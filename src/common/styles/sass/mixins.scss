@@ -7,3 +7,16 @@
   line-height: $lineHeight;
   color: $color;
 }
+
+@mixin container() {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@mixin flex($direction, $justify-content, $align-items, $flex-wrap ){
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-wrap: $flex-wrap;
+}

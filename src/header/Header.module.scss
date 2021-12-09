@@ -1,9 +1,11 @@
 @import "../common/styles/sass/vareables";
+@import "../common/styles/sass/mixins";
 
 .header {
     height: 80px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    @include flex(row, flex-end, center, wrap);
+    //display: flex;
+    //justify-content: flex-end;
+    //align-items: center;
     background-color: $backgroundSecondaryColor;
 }

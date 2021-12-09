@@ -10,7 +10,7 @@ import {faLocationArrow} from '@fortawesome/free-solid-svg-icons'
 function Footer() {
     return (
         <div className={style.footer}>
-            <div className={`${styleContainer.container} ${style.footerContainer}`}>
+            <div className={` ${style.footerContainer}`}>
                 <div className={style.footerItems}>
                     <FooterItem icon = {faAt} title = "E-mail" content = "olga_gladkova@tut.by"/>
                     <FooterItem icon = {faPhone} title = "Phone" content = "+37061942746"/>

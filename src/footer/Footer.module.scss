@@ -7,7 +7,9 @@
   padding: 50px 0;
 
   .footerContainer {
-    flex-direction: column;
+    //flex-direction: column;
+    @include container();
+    @include flex(column, space-between, center, wrap);
 
     .footerText {
       padding-top: 30px;
@@ -16,9 +18,10 @@
 
     .footerItems {
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      @include flex(row, space-between, center, wrap);
+      //display: flex;
+      //justify-content: space-between;
+      //flex-wrap: wrap;
       @media screen and (max-width: 800px) {
         justify-content: left;
       }
