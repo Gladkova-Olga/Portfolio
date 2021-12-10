@@ -5,7 +5,8 @@
   padding: 30px 0;
 
   .freelanceContainer {
-    flex-direction: column;
+    @include container();
+    @include flex(column, space-between, center, wrap);
 
 
   }

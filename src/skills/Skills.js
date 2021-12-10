@@ -1,20 +1,21 @@
 import React from 'react';
 import style from './Skills.module.scss';
-import styleContainer from "../common/styles/Container.module.scss";
 import SkillItem from "./skilItem/SkillItem";
 import Title from "../common/components/title/Title";
 import jsIcon from "../assets/images/java-script.svg"
 import reactIcon from "../assets/images/react.svg"
 import reduxIcon from "../assets/images/redux.svg"
 import cssIcon from "../assets/images/css.svg"
-
+import Flip from 'react-reveal/Flip';
 
 function Skills() {
 
     return (
         <div className={style.skillsBlock} id="skills">
             <div className={` ${style.skillsContainer}`}>
-                <Title text="Skills"/>
+                <Flip top>
+                    <Title text="Skills"/>
+                </Flip>
                 <div className={style.skills}>
                     <SkillItem title={"JavaScript"}
                                description={"Our long-long-long-lon-long description1"}
