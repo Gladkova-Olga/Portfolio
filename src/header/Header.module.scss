@@ -4,8 +4,5 @@
 .header {
     height: 80px;
     @include flex(row, flex-end, center, wrap);
-    //display: flex;
-    //justify-content: flex-end;
-    //align-items: center;
     background-color: $backgroundSecondaryColor;
 }

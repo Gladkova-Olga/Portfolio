@@ -1,7 +1,8 @@
 import React from 'react';
 import style from './Main.module.scss';
 import meImg from './../assets/images/me.jpg'
-import ReactTypingEffect from 'react-typing-effect';
+import ReactTypingEffect from 'react-typing-effect'
+import Tilt from 'react-tilt'
 
 function Main() {
     return (
@@ -17,9 +18,11 @@ function Main() {
                         />
                     </div>
                     <div className={style.photoContainer}>
-                        <img className={style.photo}
-                             src={meImg}
-                             alt={""}/>
+                        <Tilt className="Tilt" options={{ max : 15 }} >
+                            <img className={style.photo}
+                                 src={meImg}
+                                 alt={""}/>
+                        </Tilt>
                     </div>
                 </div>
 
