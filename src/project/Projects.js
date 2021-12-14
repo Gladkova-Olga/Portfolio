@@ -14,6 +14,16 @@ function Projects() {
     const todoList = {
         backgroundImage: `url(${todoImage})`,
     };
+    const projectItems = [
+        {
+            style: socialNetwork, title: "Social network", description: "It's simple social network",
+            projectLink: "https://github.com/Gladkova-Olga/SocialNetwork"
+        },
+        {
+            style: todoList, title: "TodoList", description: "Some description",
+            projectLink: "https://github.com/Gladkova-Olga/MyTodoList"
+        }
+    ]
 
     return (
         <div className={style.projectsBlock} id="projects">
@@ -21,20 +31,15 @@ function Projects() {
                 <Flip top>
                     <Title text="My Projects"/>
                 </Flip>
-                    <div className={style.projects}>
-                        <ProjectItem
-                            style={socialNetwork}
-                            title={"Social network"}
-                            description={"It's simple social network"}
-                            projectLink={"https://github.com/Gladkova-Olga/SocialNetwork"}
-                        />
-                        <ProjectItem
-                            style={todoList}
-                            title={"TodoList"}
-                            description={"Some description"}
-                            projectLink={"https://github.com/Gladkova-Olga/MyTodoList"}
-                        />
-                    </div>
+
+
+                <div className={style.projects}>
+                    {projectItems.map((p) => {
+                        return <ProjectItem style={p.style} title={p.title}
+                                            description={p.description} projectLink={p.projectLink}/>
+                    })}
+
+                </div>
 
             </div>
 

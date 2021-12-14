@@ -6,7 +6,7 @@ import Flip from 'react-reveal/Flip';
 
 function Contact() {
     return (
-        <div className={style.contactBlock} id="contacts">
+        <div className={style.contactBlock} >
             <div className={`${style.contactContainer}`}>
                 <Flip top>
                     <Title text={"Contact"}/>
@@ -15,8 +15,9 @@ function Contact() {
                     <input type="text" name="name" placeholder="Name"/>
                     <input type="text" name="e-mail" placeholder="E-mail"/>
                     <textarea name="message" placeholder="Your message"/>
+                    <Button buttonType={"submit"} buttonName="Send message"/>
                 </form>
-                <Button buttonType={"submit"} buttonName="Send message"/>
+
 
             </div>
         </div>

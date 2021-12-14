@@ -6,7 +6,7 @@ import Flip from 'react-reveal/Flip';
 
 function Freelance() {
     return (
-        <div className={style.freelanceBlock}>
+        <div className={style.freelanceBlock} id="contacts">
             <Flip top>
                 <div className={` ${style.freelanceContainer}`}>
                     <Title text={"I'm available for Freelancer"}/>

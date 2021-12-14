@@ -5,9 +5,12 @@ import style from './ProjectItem.module.scss';
 function ProjectItem(props) {
     return (
         <div className={style.projectItem}>
-            <div className={style.pictureContainer} style={props.style}>
-                <a href={props.projectLink} className={style.projectButton}>Look</a>
-            </div>
+            {/*<div className={style.pictureContainer} style={props.style}>*/}
+            {/*    <a href={props.projectLink} className={style.projectButton}>Look</a>*/}
+            {/*</div>*/}
+            <a href={props.projectLink} className={style.projectButton}>
+                <div className={style.pictureContainer} style={props.style}></div>
+            </a>
 
             <div className={style.projectInfo}>
                 <h6 className={style.projectTitle}>{props.title}</h6>

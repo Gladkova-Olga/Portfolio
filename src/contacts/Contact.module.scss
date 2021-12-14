@@ -8,21 +8,17 @@
   .contactContainer {
     @include container();
     @include flex(column, center, center, wrap);
-    //flex-direction: column;
-    //justify-content: center;
 
     .form {
       width: 80%;
       @include flex(column, center, center, wrap);
-      //display: flex;
-      //justify-content: space-between;
-      //flex-wrap: wrap;
       margin-bottom: 20px;
       margin-top: 20px;
       @media screen and (min-width: 700px) {
         width: 60%;
       }
     }
+
 
     & input, & textarea {
       width: 100%;
