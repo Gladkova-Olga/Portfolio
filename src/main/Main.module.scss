@@ -8,15 +8,10 @@
 
   .mainContainer {
     height: 100%;
-    //flex-direction: column;
-    //justify-content: space-evenly;
     @include container();
     @include flex(column, space-evenly, center, wrap);
 
     .mainContent {
-      //display: flex;
-      //justify-content: space-between;
-      //flex-wrap: wrap;
       @include flex(row, space-between, center, wrap);
       @media screen and (max-width: 1000px) {
         justify-content: center;
@@ -61,10 +56,6 @@
 
         .photo {
           width: 100%;
-
-
-
-
         }
       }
     }

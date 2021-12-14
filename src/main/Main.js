@@ -30,7 +30,7 @@ function Main() {
                 </div>
 
                 <div className={style.mainBlockLink}>
-                    <a href="../contacts/Contact.js#contacts">Hire me</a>
+                    <a href="#contacts">Hire me</a>
                 </div>
             </div>
 

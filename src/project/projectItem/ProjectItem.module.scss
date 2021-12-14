@@ -9,11 +9,7 @@
 
   .pictureContainer {
     height: 300px;
-    @include flex(column,center, center, nowrap);
-    //display: flex;
-    //flex-direction: column;
-    //justify-content: center;
-    //align-items: center;
+    @include flex(column, center, center, nowrap);
     background-size: cover;
     background-position: center;
     position: relative;

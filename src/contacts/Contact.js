@@ -6,7 +6,7 @@ import Flip from 'react-reveal/Flip';
 
 function Contact() {
     return (
-        <div className={style.contactBlock} >
+        <div className={style.contactBlock}>
             <div className={`${style.contactContainer}`}>
                 <Flip top>
                     <Title text={"Contact"}/>

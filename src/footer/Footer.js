@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './Footer.module.scss';
-import styleContainer from "../common/styles/Container.module.scss";
 import FooterItem from "./FooterItem/FooterItem";
 import {faPhone} from '@fortawesome/free-solid-svg-icons'
 import {faAt} from '@fortawesome/free-solid-svg-icons'
