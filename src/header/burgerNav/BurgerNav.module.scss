@@ -35,7 +35,7 @@
   }
 
   .menuButton {
-    @include text($fontFamilyDescription, 14px, 700, 1, $primaryColor);
+    @include text($fontFamilyDescription, 12px, 700, 1, $primaryColor);
     border: 1px solid $primaryColor;
     letter-spacing: 1px;
     height: 30px;
