@@ -23,11 +23,11 @@
 
   }
 
-  .description {
-    text-align: center;
-    word-spacing: 1px;
-    @include text($fontFamilyDescription, 15px, 400, 1.6, $descriptionColor);
-  }
+  //.description {
+  //  text-align: center;
+  //  word-spacing: 1px;
+  //  @include text($fontFamilyDescription, 15px, 400, 1.6, $descriptionColor);
+  //}
 }
 
 

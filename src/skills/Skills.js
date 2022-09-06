@@ -12,22 +12,18 @@ function Skills() {
     const skillsItem = [
         {
             title: "JavaScript",
-            description: "Our long-long-long-lon-long description1",
             icon: jsIcon
         },
         {
             title: "React",
-            description: "Our description2",
             icon: reactIcon
         },
         {
             title: "Redux",
-            description: "Our description3",
             icon: reduxIcon
         },
         {
             title: "CSS",
-            description: "Our description4",
             icon: cssIcon
         },
     ]
@@ -40,7 +36,7 @@ function Skills() {
                 </Flip>
                 <div className={style.skills}>
                     {skillsItem.map((s) => {
-                        return <SkillItem title={s.title} description={s.description} icon={s.icon}/>
+                        return <SkillItem title={s.title} icon={s.icon}/>
                     })}
                 </div>
             </div>
