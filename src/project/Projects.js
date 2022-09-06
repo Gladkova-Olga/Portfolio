@@ -16,11 +16,21 @@ function Projects() {
     };
     const projectItems = [
         {
-            style: socialNetwork, title: "Social network", description: "It's simple social network",
+            style: socialNetwork,
+            title: "Social network",
+            description: "This is a simple social network. It was is my learning project." +
+                "I used Typescript, React, Redux, SCSS. This project was developed by applying of " +
+                "React class based components. " +
+                "Also I used such libraries like axios, redux-thunk. ",
             projectLink: "https://github.com/Gladkova-Olga/SocialNetwork"
         },
         {
-            style: todoList, title: "TodoList", description: "Some description",
+            style: todoList,
+            title: "TodoList",
+            description: "I used Typescript, React, Redux for developing the To Do List. " +
+                "You can add, change, delete your tasks at different lists. It was a learning project. " +
+                "It was developed by applying of React functional components. " +
+                "I used axios, formic, material-ui, redux-thunk.",
             projectLink: "https://github.com/Gladkova-Olga/MyTodoList"
         }
     ]
