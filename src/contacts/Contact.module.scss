@@ -9,27 +9,14 @@
     @include container();
     @include flex(column, center, center, wrap);
 
-    .form {
-      width: 80%;
-      @include flex(column, center, center, wrap);
-      margin-bottom: 20px;
-      margin-top: 20px;
-      @media screen and (min-width: 700px) {
-        width: 60%;
-      }
-    }
-
-
-    & input, & textarea {
+    .contactsItems {
+      margin-top: 40px;
       width: 100%;
-      margin: 5px 0;
-      background-color: $backgroundColor;
-      border: 1px solid $textColor;
-      @include text($fontFamilyDescription, 12px, 400, 1.2, $textColor)
-    }
+      @include flex(row, space-between, center, wrap);
+      @media screen and (max-width: 800px) {
+        justify-content: left;
 
-    & textarea {
-      height: 150px;
+      }
     }
   }
 }
